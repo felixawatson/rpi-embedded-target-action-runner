@@ -12,7 +12,6 @@ on:
         default: 'y'
 jobs:
   build-sample-application:
-    needs: analyse-code
     name: Build
     runs-on: ubuntu-22.04
     steps:
