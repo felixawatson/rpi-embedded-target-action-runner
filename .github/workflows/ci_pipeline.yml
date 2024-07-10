@@ -158,7 +158,7 @@ jobs:
           name: test-system-output
           path: test-system-output
   release:
-    needs: [unit-test, system-test]
+    needs: [build-sample-application]
     if: github.ref == 'refs/heads/master' || github.event.inputs.release == 'y'
     name: Release to Github
     runs-on: ubuntu-22.04
